@@ -25,25 +25,25 @@ Este espacio centraliza los recursos trabajados del proyecto **Testimonial CMS**
 ---
 ## 📅 Ceremonias SCRUM SPRINT - documentación  
 ┬  
-├──┬── Sprint 0  (Semana 0)   
-│  ├── [Acta Sesión 01 - Planning](link)    
-│  └── [Acta Sesión 02 - Demo](link)  
+├─┬── Sprint 0  (Semana 0)   
+│ ├── [Acta Sesión 01 - Planning](link)    
+│ └── [Acta Sesión 02 - Demo](link)  
 │  
-├──┬── Sprint 1 (Semana 1)  
-│  ├── [Acta Sesión 03 - Planning](link)  
-│  └── [Acta Sesión 04 - Demo](link)  
+├─┬── Sprint 1 (Semana 1)  
+│ ├── [Acta Sesión 03 - Planning](link)  
+│ └── [Acta Sesión 04 - Demo](link)  
 │  
-├──┬── Sprint 2 (Semana 2)  
-│  ├── [Acta Sesión 05- Planning](link)  
-│  └── [Acta Sesión 06 - Demo](link)  
+├─┬── Sprint 2 (Semana 2)  
+│ ├── [Acta Sesión 05- Planning](link)  
+│ └── [Acta Sesión 06 - Demo](link)  
 │  
-├──┬── Sprint 3 (Semana 3)  
-│  ├── [Acta Sesión 07 - Planning](link)  
-│  └── [Acta Sesión 08 - Demo](link)  
-│  
-└──┬── Sprint 4 (Semana 4)  
- . ├── [Acta Sesión 09 - Planning](link)  
- . └── [Acta Sesión 10  - Demo](link)  
+├─┬── Sprint 3 (Semana 3)  
+│ ├── [Acta Sesión 07 - Planning](link)  
+│ └── [Acta Sesión 08 - Demo](link)  
+│ 
+└─┬── Sprint 4 (Semana 4)  
+. ├── [Acta Sesión 09 - Planning](link)  
+. └── [Acta Sesión 10  - Demo](link)  
 
 - 📋 **Acta Sesión 01**  [Ver documento](https://docs.google.com/document/d/1vsz9CbYgLEJ7s2FR4q9RccJOGm7R0BgUhl1w4Am2b_A/edit?tab=t.0)
 - 📋 **Acta Sesión 02**  [Ver documento](https://docs.google.com/document/d/1vsz9CbYgLEJ7s2FR4q9RccJOGm7R0BgUhl1w4Am2b_A/edit?tab=t.0)
