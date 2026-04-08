@@ -46,8 +46,7 @@
 
 ╦═ 🔗 **Contrato**  
 ╠════ 📋 *Contrato de API* [Ver Documento](https://docs.google.com/document/d/1_VQo553HxNgcYYSSj9dnQ1tYbdImTgMOH6tLx-8S31c/edit?usp=drive_link)  
-╠════ 📅 *Contrato de Datos* [Ver Documento](https://docs.google.com/document/d/1xMf3B1w2o3sKZv4dFy0ww1f2pQhDvFFX4XptZrbXuGc/edit?usp=drive_link)      
-╚════ 📈 Incrementos / entregables [Ver Documento](link)  
+╚════ 📅 *Contrato de Datos* [Ver Documento](https://docs.google.com/document/d/1xMf3B1w2o3sKZv4dFy0ww1f2pQhDvFFX4XptZrbXuGc/edit?usp=drive_link)  
 
 ╦═ 📌 **Especificaciones**   
 ╚════ *Proyecto Detalle Desarrollo* [S0S1 - Anexo A](https://docs.google.com/document/d/1vsz9CbYgLEJ7s2FR4q9RccJOGm7R0BgUhl1w4Am2b_A/edit?usp=drive_link)  
