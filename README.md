@@ -26,8 +26,9 @@ Este espacio centraliza los recursos trabajados del proyecto **Testimonial CMS**
 ## 📅 Ceremonias SCRUM SPRINT - documentación  
 > Sprint 0  (Semana 0)   
 >> [Acta Sesión 01 - Planning](link)    
->> [Acta Sesión 02 - Demo](link)  
-│  
+>> [Acta Sesión 02 - Demo](link)
+
+  
 > Sprint 1 (Semana 1)  
 >> [Acta Sesión 03 - Planning](link)  
 >> [Acta Sesión 04 - Demo](link)  
