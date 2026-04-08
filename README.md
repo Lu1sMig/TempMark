@@ -42,8 +42,8 @@ Este espacio centraliza los recursos trabajados del proyecto **Testimonial CMS**
 │ └── [Acta Sesión 08 - Demo](link)  
 │ 
 └─┬── Sprint 4 (Semana 4)  
-&nbsp ├── [Acta Sesión 09 - Planning](link)  
-&nbsp └── [Acta Sesión 10  - Demo](link)  
+	├── [Acta Sesión 09 - Planning](link)  
+	└── [Acta Sesión 10  - Demo](link)  
 
 - 📋 **Acta Sesión 01**  [Ver documento](https://docs.google.com/document/d/1vsz9CbYgLEJ7s2FR4q9RccJOGm7R0BgUhl1w4Am2b_A/edit?tab=t.0)
 - 📋 **Acta Sesión 02**  [Ver documento](https://docs.google.com/document/d/1vsz9CbYgLEJ7s2FR4q9RccJOGm7R0BgUhl1w4Am2b_A/edit?tab=t.0)
