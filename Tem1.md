@@ -26,11 +26,11 @@
 
 ╦═ 📊 Sprint 3(Semana 3)  
 ╠════ 📋 *Acta Sesión 07* [S3S07 - Ver](https://docs.google.com/document/d/1mnNmRg-7B-P16nrI-p4Qd8A7_v4Zz5mk2GBO1Z6BAKQ/edit?usp=drive_link) - Planning   
-╚════ 📋 *Acta Sesión 08* [S3S08 - Ver](https://docs.google.com/document/d/18HQ06O2KNc_sVFECxSfXLaJrpiPict_szMV6VB1thJg/edit?usp=drive_link) - Demo    
+╚════ 📋 *Acta Sesión 08* [S3S08 - Ver](https://link) - Demo (pendiente)    
 
-╦═ 📊 Sprint 3(Semana 3)  
-╠════ 📋 *Acta Sesión 09* [S4S09 - Ver](https://docs.google.com/document/d/1mnNmRg-7B-P16nrI-p4Qd8A7_v4Zz5mk2GBO1Z6BAKQ/edit?usp=drive_link) - Planning   
-╚════ 📋 *Acta Sesión 10* [S4S10 - Ver](https://docs.google.com/document/d/18HQ06O2KNc_sVFECxSfXLaJrpiPict_szMV6VB1thJg/edit?usp=drive_link) - Demo  
+╦═ 📊 Sprint 4(Semana 4)  
+╠════ 📋 *Acta Sesión 09* [S4S09 - Ver](https://link) - Planning (pendiente)       
+╚════ 📋 *Acta Sesión 10* [S4S10 - Ver](https://link) - Demo (pendiente)      
 
 
 ---
