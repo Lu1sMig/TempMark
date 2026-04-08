@@ -67,5 +67,5 @@
 
 ## 📂 5. Recursos del  Proyecto
 ╦  
-╠═════ ☁️💾 **Google Drive **  [Acceder a la carpeta](https://drive.google.com/drive/folders/1gxm1LT9l62OA3rOqmnlVtS2jVi9_08aN?usp=sharing)  
-╚═════ ☁️💾 **Google Drive **  [Acceder a la carpeta](https://drive.google.com/drive/folders/1gxm1LT9l62OA3rOqmnlVtS2jVi9_08aN?usp=sharing)  
+╠═ ☁️💾 **Google Drive **  [Acceder a la carpeta](https://drive.google.com/drive/folders/1gxm1LT9l62OA3rOqmnlVtS2jVi9_08aN?usp=sharing)  
+╚═ ☁️💾 **Google Drive **  [Acceder a la carpeta](https://drive.google.com/drive/folders/1gxm1LT9l62OA3rOqmnlVtS2jVi9_08aN?usp=sharing)  
