@@ -1,14 +1,23 @@
 # 🚀 S03-26-Equipo-06-Web-App-Development
-CMS para gestionar y publicar testimonios con soporte multimedia.
+Plataforma CMS para gestionar y publicar testimonios con soporte multimedia, desarrollada en un entorno colaborativo ágil.
 
-## 📌 1.- Descripción
+## 🌐 1.- Demo
+### 🔗 Próximamente...
+### 📸 Screenshots:
+Las imágenes del sistema cuando esté corriendo)
+- Imagen1
+- Imagen2
+
+## 📌 2.- Sobre el Proyecto
 Este proyecto es una aplicación web desarrollada en el contexto de una simulación profesional de No Country, cuyo objetivo es construir un CMS (Content Management System) que permita:
 - Crear y gestionar testimonios  
 - Publicar contenido multimedia (imágenes, videos, etc.)  
 - Administrar usuarios y autenticación con JWT  
-- Visualizar contenido en una interfaz moderna  
+- Visualizar contenido en una interfaz moderna
+- Arquitectura desacoplada frontend/backend
+- Despliegue mediante Docker
 
-## 🧱 2.- Arquitectura del Proyecto
+## 🧱 3.- Arquitectura del Proyecto
 El proyecto sigue una arquitectura desacoplada basada en microservicios:  
 📦 root  
  ┣ 📂 backend      → API REST (Spring Boot)  
@@ -16,47 +25,44 @@ El proyecto sigue una arquitectura desacoplada basada en microservicios:
  ┣ 📄 docker-compose.yml  
  ┗ 📄 README.md  
   
-## 🛠️ 3.- Tecnologías utilizadas
-> Backend
-> + Java 21  
-> + Spring Boot  
-> + Spring Security  
-> + JWT (JSON Web Tokens)  
+## 🛠️ 4.- Stack Tecnológico 
+🔹 Backend
+ + Java 21  
+ + Spring Boot  
+ + Spring Security  
+ + JWT (JSON Web Tokens)  
 
-> Frontend
-> - Node.js 22+
-> - Vite  
-> - JavaScript / (posible React)  
+🔹 Frontend
+ - Node.js 22+
+ - Vite  
+ - JavaScript / (posible React)  
 
-> DevOps
-> - Docker  
-> - Docker Compose  
-
-## ⚙️ 4.- Requisitos
-Antes de ejecutar el proyecto, asegúrate de tener instalado:
-- Node.js 22+  
-- Java 21+  
-- Docker (opcional pero recomendado)
+🔹 DevOps
+- Docker  
+- Docker Compose  
 
 ## 🚀 5.- Ejecución del proyecto
+Antes de ejecutar el proyecto, asegúrate de tener instalado Node.js 22, - Java 21 para opción manual y Docker para seguir con la opción recomendada
 
-### 🔹 Opción 1: Desarrollo local
-
-> Backend
+### 🔹 Opción 1: Ejecución Manual - Desarrollo local
+En la carpeta donde se almacenara la aplicación en tu equipo local, abrir el terminal y ejecutar.
+> **Para la ejecución del Backend**
 ```bash
 cd backend  
  ./mvnw spring-boot:run
 ```
-
-> Frontend
+> **Para la ejecución del Frontend**
 ```bash
 cd frontend
 npm install
 npm run dev
 ```
 
-### 🔹Opción 2: Docker (Recomendado)
+### 🔹Opción 2: Docker (opción Recomendada)
+En la carpeta donde se almacenara la aplicación en tu equipo local, abrir el terminal y ejecutar.
 ```bash
+git clone https://github.com/No-Country-simulation/S03-26-Equipo-06-Web-App-Development.git
+cd S03-26-Equipo-06-Web-App-Development docker-compose up --build
 docker-compose up --build
 ```
 
