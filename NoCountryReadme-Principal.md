@@ -9,7 +9,7 @@ Este proyecto es una aplicación web desarrollada en el contexto de una simulaci
 - Visualizar contenido en una interfaz moderna  
 
 ## 🧱 Arquitectura del Proyecto
-El proyecto sigue una arquitectura desacoplada basada en microservicios:
+El proyecto sigue una arquitectura desacoplada basada en microservicios:  
 📦 root  
  ┣ 📂 backend      → API REST (Spring Boot)  
  ┣ 📂 frontend     → Aplicación web (Vite / Node.js)  
@@ -98,15 +98,15 @@ Claves más cortas generarán errores de seguridad en la aplicación.
 Este proyecto incluye un archivo docker-compose.yml que permite levantar todos los servicios de forma sencilla.
 
 Comandos útiles:
-# Construir y levantar contenedores
+### Construir y levantar contenedores
 ```bash
 docker-compose up --build
 ```
-# Detener contenedores
+### Detener contenedores
 ```bash
 docker-compose down
 ```
-🤝 Contribución
+## 🤝 Contribución
 
 Proyecto desarrollado en equipo bajo metodología ágil (Scrum) en el entorno de No Country.
 Si deseas contribuir:
@@ -118,13 +118,22 @@ Si deseas contribuir:
 ## 📌 Estado del proyecto
 - 🚧 En desarrollo
 
-## 👨‍💻 Equipo de desarrollo
+## 👨‍💻 Equipo de desarrollo y roles
 S03-26-Equipo 06 - No Country Simulation
-- Participante1 del proyecto colaborativo
-- Participante2 del proyecto colaborativo
-- Participante3 del proyecto colaborativo 
-- Participante4 del proyecto colaborativo
-- Participante5 del proyecto colaborativo
+- A. Ricardo    [FrontEnd]
+- C. Elian      [Devops]
+- C. Luis       [Architech]
+- L. Cristhian  [BackEnd]
+- R. Ignacio    [BackEnd]
   
 ## 📄 Licencia
 Este proyecto es de uso educativo dentro del programa No Country.
+
+## 📸 Agregar screenshots del sistema
+* $#$$%%&&
+  
+## 📊 Diagrama de arquitectura
+* $#$$%%&&
+  
+## 📡 Endpoints documentados (Swagger/Postman)
+* $#$$%%&&
