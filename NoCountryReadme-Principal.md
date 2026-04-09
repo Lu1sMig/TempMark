@@ -1,14 +1,14 @@
 # 🚀 S03-26-Equipo-06-Web-App-Development
 CMS para gestionar y publicar testimonios con soporte multimedia.
 
-## 📌 Descripción
+## 📌 1.- Descripción
 Este proyecto es una aplicación web desarrollada en el contexto de una simulación profesional de No Country, cuyo objetivo es construir un CMS (Content Management System) que permita:
 - Crear y gestionar testimonios  
 - Publicar contenido multimedia (imágenes, videos, etc.)  
 - Administrar usuarios y autenticación con JWT  
 - Visualizar contenido en una interfaz moderna  
 
-## 🧱 Arquitectura del Proyecto
+## 🧱 2.- Arquitectura del Proyecto
 El proyecto sigue una arquitectura desacoplada basada en microservicios:  
 📦 root  
  ┣ 📂 backend      → API REST (Spring Boot)  
@@ -16,7 +16,7 @@ El proyecto sigue una arquitectura desacoplada basada en microservicios:
  ┣ 📄 docker-compose.yml  
  ┗ 📄 README.md  
   
-## 🛠️ Tecnologías utilizadas
+## 🛠️ 3.- Tecnologías utilizadas
 > Backend
 > + Java 21  
 > + Spring Boot  
@@ -32,13 +32,13 @@ El proyecto sigue una arquitectura desacoplada basada en microservicios:
 > - Docker  
 > - Docker Compose  
 
-## ⚙️ Requisitos
+## ⚙️ 4.- Requisitos
 Antes de ejecutar el proyecto, asegúrate de tener instalado:
 - Node.js 22+  
 - Java 21+  
 - Docker (opcional pero recomendado)
 
-## 🚀 Ejecución del proyecto
+## 🚀 5.- Ejecución del proyecto
 
 ### 🔹 Opción 1: Desarrollo local
 
@@ -66,12 +66,9 @@ Frontend → http://localhost:5173
 Backend → http://localhost:8080
 ```
 
-🔐 Variables de entorno
-
+## 🔐 6.-  Variables de entorno
 ⚠️ Este proyecto requiere archivos .env para su correcto funcionamiento.
-
-📁 Backend (backend/.env)
-
+### 📁 Backend (backend/.env)
 Ejemplo:
 ```bash
 SPRING_DATASOURCE_URL=jdbc:postgresql://db:5432/testdb
@@ -81,8 +78,7 @@ SPRING_DATASOURCE_PASSWORD=postgres
 JWT_SECRET=1234567890abcdef1234567890abcdef
 JWT_EXPIRATION=3600000
 ```
-
-📁 Frontend (frontend/.env)
+### 📁 Frontend (frontend/.env)
 ```bash
 VITE_API_URL=http://localhost:8080
 ```
@@ -107,8 +103,7 @@ docker-compose up --build
 docker-compose down
 ```
 ## 🤝 Contribución
-
-Proyecto desarrollado en equipo bajo metodología ágil (Scrum) en el entorno de No Country.
+Este es un Proyecto desarrollado en equipo bajo metodología ágil (Scrum) en el entorno de No Country.
 Si deseas contribuir:
 - Fork del repositorio
 - Crear una nueva rama
@@ -133,7 +128,5 @@ Este proyecto es de uso educativo dentro del programa No Country.
 * $#$$%%&&
   
 ## 📊 Diagrama de arquitectura
-* $#$$%%&&
-  
-## 📡 Endpoints documentados (Swagger/Postman)
+* $#$$%%&& Endpoints documentados (Swagger/Postman)
 * $#$$%%&&
