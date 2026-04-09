@@ -10,18 +10,18 @@ Este proyecto es una aplicación web desarrollada en el contexto de una simulaci
 
 ## 🧱 Arquitectura del Proyecto
 El proyecto sigue una arquitectura desacoplada basada en microservicios:
-📦 root
- ┣ 📂 backend      → API REST (Spring Boot)
- ┣ 📂 frontend     → Aplicación web (Vite / Node.js)
- ┣ 📄 docker-compose.yml
- ┗ 📄 README.md
-
+📦 root  
+ ┣ 📂 backend      → API REST (Spring Boot)  
+ ┣ 📂 frontend     → Aplicación web (Vite / Node.js)  
+ ┣ 📄 docker-compose.yml  
+ ┗ 📄 README.md  
+  
 ## 🛠️ Tecnologías utilizadas
 > Backend
-- Java 21  
-- Spring Boot  
-- Spring Security  
-- JWT (JSON Web Tokens)  
+> + Java 21  
+> + Spring Boot  
+> + Spring Security  
+> + JWT (JSON Web Tokens)  
 
 > Frontend
 - Node.js 22+
