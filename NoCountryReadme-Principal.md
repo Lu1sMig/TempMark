@@ -24,13 +24,13 @@ El proyecto sigue una arquitectura desacoplada basada en microservicios:
 > + JWT (JSON Web Tokens)  
 
 > Frontend
-- Node.js 22+
-- Vite  
-- JavaScript / (posible React)  
+> - Node.js 22+
+> - Vite  
+> - JavaScript / (posible React)  
 
 > DevOps
-- Docker  
-- Docker Compose  
+> - Docker  
+> - Docker Compose  
 
 ## ⚙️ Requisitos
 Antes de ejecutar el proyecto, asegúrate de tener instalado:
@@ -39,21 +39,33 @@ Antes de ejecutar el proyecto, asegúrate de tener instalado:
 - Docker (opcional pero recomendado)
 
 ## 🚀 Ejecución del proyecto
-🔹 Opción 1: Desarrollo local
+
+### 🔹 Opción 1: Desarrollo local
+
 > Backend
-- cd backend  
-./mvnw spring-boot:run
-Frontend
+```bash
+cd backend  
+ ./mvnw spring-boot:run
+```
+
+> Frontend
+```bash
 cd frontend
 npm install
 npm run dev
-🔹 Opción 2: Docker (Recomendado)
+```
+
+### 🔹Opción 2: Docker (Recomendado)
+```bash
 docker-compose up --build
+```
 
 📍 Accesos:
-
+```bash
 Frontend → http://localhost:5173
 Backend → http://localhost:8080
+```
+
 🔐 Variables de entorno
 
 ⚠️ Este proyecto requiere archivos .env para su correcto funcionamiento.
@@ -61,52 +73,58 @@ Backend → http://localhost:8080
 📁 Backend (backend/.env)
 
 Ejemplo:
-
+```bash
 SPRING_DATASOURCE_URL=jdbc:postgresql://db:5432/testdb
 SPRING_DATASOURCE_USERNAME=postgres
 SPRING_DATASOURCE_PASSWORD=postgres
 
 JWT_SECRET=1234567890abcdef1234567890abcdef
 JWT_EXPIRATION=3600000
-📁 Frontend (frontend/.env)
-VITE_API_URL=http://localhost:8080
-🔒 Seguridad (JWT)
+```
 
+📁 Frontend (frontend/.env)
+```bash
+VITE_API_URL=http://localhost:8080
+```
+
+## 🔒 Seguridad (JWT)
 El sistema utiliza autenticación basada en JWT.
 
 ⚠️ IMPORTANTE:
-
 La clave JWT_SECRET debe tener un mínimo de 256 bits (32 caracteres).
 Claves más cortas generarán errores de seguridad en la aplicación.
-🐳 Docker
 
+## 🐳 Docker
 Este proyecto incluye un archivo docker-compose.yml que permite levantar todos los servicios de forma sencilla.
 
 Comandos útiles:
 # Construir y levantar contenedores
+```bash
 docker-compose up --build
-
+```
 # Detener contenedores
+```bash
 docker-compose down
+```
 🤝 Contribución
 
 Proyecto desarrollado en equipo bajo metodología ágil (Scrum) en el entorno de No Country.
-
 Si deseas contribuir:
+- Fork del repositorio
+- Crear una nueva rama
+- Realizar cambios
+- Crear Pull Request
 
-Fork del repositorio
-Crear una nueva rama
-Realizar cambios
-Crear Pull Request
-📌 Estado del proyecto
+## 📌 Estado del proyecto
+- 🚧 En desarrollo
 
-🚧 En desarrollo
-
-👨‍💻 Autor / Equipo
-
-Equipo 06 - No Country Simulation
-Participantes del proyecto colaborativo
-
-📄 Licencia
-
+## 👨‍💻 Equipo de desarrollo
+S03-26-Equipo 06 - No Country Simulation
+- Participante1 del proyecto colaborativo
+- Participante2 del proyecto colaborativo
+- Participante3 del proyecto colaborativo 
+- Participante4 del proyecto colaborativo
+- Participante5 del proyecto colaborativo
+  
+## 📄 Licencia
 Este proyecto es de uso educativo dentro del programa No Country.
