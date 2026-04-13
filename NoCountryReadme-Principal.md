@@ -66,9 +66,10 @@ npm install -g pnpm
 ##### Ejecución de aplicación
 ```bash 
 pnpm dev
-```
+
 sudo apt install -y nodejs
 npm install -g pnpm
+```
 
 #### En el folder **./basckend**
 ##### Instalación de dependencias
