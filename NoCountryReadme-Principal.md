@@ -68,30 +68,31 @@ El proyecto sigue una arquitectura desacoplada basada en microservicios:
 ```
 ### 📌 Paso 2: Ejecución de la aplicación
 #### 🔹 Opción 1: Ejecución Manual - Desarrollo local  
-##### En el folder **./Frontend**  
+Despliegue desde una maquina local
+##### Ejecutar en el folder **./frontend**  
 ###### Instalación de dependencias
 ```bash
 cd frontend
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
 source ~/.bashrc
+
+apt install -y nodejs
 nvm install 22
 nvm use 22
 npm install -g pnpm
 ```
 ###### Verificar intalación de pnpm
 ```bash
- 	node -v
-	npm -v
-	pnpm -v
+node -v
+npm -v
+pnpm -v
 ```
 ###### Ejecución de aplicación
 ```bash 
 pnpm dev
 ```
-sudo apt install -y nodejs
-npm install -g pnpm
 
-##### En el folder **./basckend**
+##### Ejecutar en el folder **./backend**
 ###### Instalación de dependencias
 ```bash
 cd backend
@@ -109,30 +110,32 @@ mvn -v
 export $(grep -v '^#' .env | grep -v '^$' | xargs)
 ./mvnw spring-boot:run
 ```
-⚠️ O puede ejecutar directamente unarchivo directametne para mejorar la ejecución ./backend/runBackEnd.sh
 #### **Abrir navegdor en:**
 Web → http://localhost:3000
 API → http://localhost:8080
 
 #### 🐳 Opción 2: Docker (opción Recomendada)
-Para levantar el entorno de una amanera más rapida, consistente y sencilla, se puede usar docker  
-En la carpeta de tu equipo local, creada para almacener esta aplicacióndonde, abre el terminal y ejecutar.  
+Despliegue desde un entorno dockerizado (se requiere haber instalado previamente en su Sistema operativo [Docker](docker https://docs.docker.com/desktop/setup/install/windows-install/)
  
-##### 📌 clonar repositorio, ubicarse en carpeta y construcción de maquina virtual
+##### 📌 Despues del paso 1, ingreso al directorio del proyecto donde se encuentre el docker-compose y proceda con la condtrucción de la imagen.
 ```bash
 docker-compose up --build
 ```
-##### Detener contenedores
+##### Abrir navegdor en:
+- Web → http://localhost:5173  
+- API → http://localhost:8080  
+
+##### [OPCIONAL] comandos de ser necesarios 
 ```bash
+echo "Detener contenedores contenedores"
+docker-compose stop
+
+echo "Eliminar contenedores"
 docker-compose down
-```
-##### Verificación en ejecución
-```bash
+
+echo "Verificar ejecución de contenedor"
 docker exec -it api-1 printenv
 ```
-##### Abrir navegdor en:
-- Web → [http://localhost:5173](http://localhost:5173)
-- API → [http://localhost:8080](http://localhost:5173)
 
 ## 🔐 6.-  Variables de entorno
 ⚠️ 📄 Este proyecto requiere archivos .env para su correcto funcionamiento.  
