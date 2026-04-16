@@ -2,7 +2,9 @@
 Plataforma CMS para gestionar y publicar testimonios con soporte multimedia, desarrollada en un entorno colaborativo ágil.
 
 ## 🌐 1.- Demo
-### 🔗 Desde el URL: [https://proxCMStestimonial.html](https://proxCMStestimonial.html)
+### 🔗 Desde el URL: [Demo](https://frontend-129781163028.us-central1.run.app/ingresar)
+![Dashboard](https://drive.google.com/uc?export=view&id=119GBsP49j3L2QHCJ3bNbsxP_a4vPV9oF)
+
 ### 📸 Screenshots:
 Las imágenes del sistema cuando esté corriendo)
 - Imagen1
@@ -26,28 +28,47 @@ El proyecto sigue una arquitectura desacoplada basada en microservicios:
  ┗ 📄 README.md  
   
 ## 🛠️ 4.- Stack Tecnológico 
-🔹 Backend:  Java 21 | Spring Boot | Spring Security | JWT (JSON Web Tokens)  
-🔹 Frontend: Node.js 22 | v18.19.1 | Vite  | JavaScript  
-🔹 Base de Datos: Supabase | PostgreSQL  
-🔹 DevOps: Docker  
+🔹 **Runtimes & Package Managers:**  
+┣ Java		→ *OpenJDK 21.0.10 (LTS)*  
+┣ Node		→ *.js: v20.20.2 (LTS)*  
+┗ Gestores de Paquetes		→ *pnpm v10.33.0 | npm v10.8.2*  
+  
+🔹 Backend (Arquitectura Robusta)  
+┣ Framework		→ *Java 21 | Spring Boot 3.x*  
+┣ Seguridad		→ *Spring Security | JWT (JSON Web Tokens)*  
+┗ Persistencia	→ *PostgreSQL (vía Supabase)*  
 
+🔹 **Frontend (Interfaz Moderna)**  
+┣ Framework		→ *React 19 | Next.js 15 | TypeScript*  
+┗ Estilos		→ *Tailwind CSS 4*  
+
+🔹 **DevOps & Infrastructure**  
+┣ Contenedores				→ *Docker v29.3.1 | Docker Compose*  
+┣ CI/CD						→ *GitHub Actions (Automatización de despliegue)*    
+┣ Cloud						→ *Google Cloud Platform (Cloud Run & Artifact Registry)*  
+┗ Seguridad & Calidad:		→ *Gitleaks (Secret scanning) | Checkstyle | ESLint*  
+
+🔹 **Herramientas de Gestión y Tooling**  
+┣ IDEs					→ *IntelliJ IDEA (Desarrollo Backend) | VS Code (Frontend)*  
+┣ DB Management:		→ *pgAdmin / Supabase Dashboard*  
+┣ Colaboración:			→ *Trello (Kanban/Scrum) | Google Drive (Docs & Actas)*  
+┣ Análisis de Datos:	→ *Microsoft Excel*  
+┗ Marco de Trabajo:		→ *Emulación de entorno real en No Country*  
+  
 ## 🚀 5.- Creación del Ambiente de ejecución del  proyecto
 **Consideración especial:**  
 
-✅ Para el despliegue, se asume su ejecución sobre un SO. Windows, con instalación WSL (*Ubuntu 24.04.3 LTS*), la ejecución de comandos se realizara desde *WSL terminal* y los comandos de git desde *gitbash terminal*, se recomienda colocar la aplicación en la unidad de instalación del WSL en una carpeta como *home/.* para un mejor desempeño.  
-
-✅ Para la arquitectura de la aplicación (Next.js + Spring Boot + Docker), al identificar que npm generaba inconsistencias entre entornos y duplicación de paquetes lo que afectaba el rendimiento y el tamaño de lamacenamiento del Docker, además de ocultar errores de dependencias y presentar limitaciones para manejar estructuras tipo monorepo, dificultando la escalabilidad; se eligió pnpm para garantizar mayor eficiencia y control en el desarrollo del proyecto. Finalmente, pnpm (Performant Node Package Manager) optimiza la gestión de dependencias mediante un almacenamiento compartido, reduciendo el uso de disco, acelerando instalaciones y mejorando la consistencia entre entornos.  
-
-📁 Para que el front y el backend funcione correctamente, hay que definir las variables de ambiente en el .env de cada carpeta, antes de ejecutar revisar la estrutura de los archivos en el punto 6.  
-  
-Descargar el repositorio desde github  
+✅ Para el despliegue, se asume su ejecución sobre un SO. Windows, con instalación WSL (*Ubuntu 24.04.3 LTS*), la ejecución de comandos se realizara desde *WSL terminal* y los comandos de git desde *gitbash terminal*, considerar que WSL y Windows son sistemas separados entre si.
+✅ Para la arquitectura de la aplicación (Next.js + Spring Boot + Docker), se trabajo con pnp dado que el npm generaba inconsistencias entre entornos y duplicación de paquetes, afectando el rendimiento y el tamaño de almacenamiento del Docker, además de ocultar errores de dependencias y presentar limitaciones para manejar estructuras tipo monorepo, dificultando la escalabilidad; de este motivo se eligió pnpm para garantizar la eficiencia y control en el desarrollo del proyecto. Finalmente indicar que pnpm (Performant Node Package Manager) optimiza la gestión de dependencias mediante un almacenamiento compartido, reduciendo el uso de disco, acelerando instalaciones y mejorando la consistencia entre entornos.  
+📁 Para que el front y el backend funcione correctamente, hay que definir las variables de ambiente en el archvio .env, antes de ejecutar revisar la estrutura de los archivos en el punto 6.   
+###📌 Paso 1: Descargar el repositorio desde github
 ```bash
 	git clone https://github.com/No-Country-simulation/S03-26-Equipo-06-Web-App-Development.git
 	cd S03-26-Equipo-06-Web-App-Development
 ```
-
-### 🔹 Opción 1: Ejecución Manual - Desarrollo local
-#### En el folder **./Frontend**
+###📌 Paso 2: Ejecución de la aplicación
+### 🔹 Opción 1: Ejecución Manual - Desarrollo local  
+#### En el folder **./Frontend**  
 ##### Instalación de dependencias
 ```bash
 cd frontend
@@ -66,10 +87,9 @@ npm install -g pnpm
 ##### Ejecución de aplicación
 ```bash 
 pnpm dev
-
+```
 sudo apt install -y nodejs
 npm install -g pnpm
-```
 
 #### En el folder **./basckend**
 ##### Instalación de dependencias
@@ -84,28 +104,22 @@ chmod +x mvnw
 ```bach
 mvn -v
 ```
-
 ##### Ejecución de aplicación
 ```bach
 export $(grep -v '^#' .env | grep -v '^$' | xargs)
 ./mvnw spring-boot:run
 ```
 ⚠️ O puede ejecutar directamente unarchivo directametne para mejorar la ejecución ./backend/runBackEnd.sh
-
-### Abrir navegdor en:
+### **Abrir navegdor en:**
 Web → http://localhost:3000
 API → http://localhost:8080
 
-
 ### 🐳 Opción 2: Docker (opción Recomendada)
-Para levantar el entorno de una amanera más rapida, consistente y sencilla, se puede usar docker
-
-En la carpeta de tu equipo local, creada para almacener esta aplicacióndonde, abre el terminal y ejecutar.
-Comandos útiles:
-#### clonar repositorio, ubicarse en carpeta y construcción de maquina virtual
+Para levantar el entorno de una amanera más rapida, consistente y sencilla, se puede usar docker  
+En la carpeta de tu equipo local, creada para almacener esta aplicacióndonde, abre el terminal y ejecutar.  
+ 
+#### 📌 clonar repositorio, ubicarse en carpeta y construcción de maquina virtual
 ```bash
-git clone https://github.com/No-Country-simulation/S03-26-Equipo-06-Web-App-Development.git
-cd S03-26-Equipo-06-Web-App-Development
 docker-compose up --build
 ```
 #### Detener contenedores
@@ -121,15 +135,11 @@ docker exec -it api-1 printenv
 - API → [http://localhost:8080](http://localhost:5173)
 
 ## 🔐 6.-  Variables de entorno
-⚠️ 📄 Este proyecto requiere archivos .env para su correcto funcionamiento.
-⚠️ 🔒 Dado que ha implemntado seguridad JWT, para que el backend funcione se debe definir una clave secreta (JWT_SECRET) de almenos 32 caracteres (256 bit), sin esta el backend no iniciará.
+⚠️ 📄 Este proyecto requiere archivos .env para su correcto funcionamiento.  
+⚠️ 🔒 Dado que ha implemntado seguridad JWT, para que el backend funcione se debe definir una clave secreta (JWT_SECRET) de almenos 32 caracteres (256 bit), sin esta el backend no iniciará.  
 
 ### 📁 Frontend (frontend/.env)
 ```bash
-
-
-
-
 VITE_API_URL=http://localhost:8080
 ```
 
@@ -178,10 +188,138 @@ S03-26-Equipo 06 - No Country Simulation
   
 ## 📄 Licencia
 Este proyecto es de uso educativo dentro del programa No Country.
+---
+---
+## 📸 Screenshots:
+- Registro
+![Registro](https://drive.google.com/uc?export=view&id=1Ngzsn1H3gWGGBXf_icCu2qWAY5BFoiKx)
 
-## 📸 Agregar screenshots del sistema
-* $#$$%%&&
-  
-## 📊 Diagrama de arquitectura
-* $#$$%%&& Endpoints documentados (Swagger/Postman)
-* $#$$%%&&
+- Login
+![Login](https://drive.google.com/uc?export=view&id=19I3Yd1FUzTdt2575MKXt3fwY7CnqhVoC)
+
+- Dashboard
+![Dashboard](https://drive.google.com/uc?export=view&id=119GBsP49j3L2QHCJ3bNbsxP_a4vPV9oF)
+
+- Creación de testimonio
+![Crear_testimonio](https://drive.google.com/uc?export=view&id=1uD2zIWWC9jojT3OhusD7A6tchsDTahnF)
+
+- Publicaciones
+![Publicaciones](https://drive.google.com/uc?export=view&id=1d4Qh_MTvAkWaOZEQ8-mb9C1FS3U2ZKPv)
+
+## 📊 Endpoints documentados
+
+### 🔐 Autenticación
+| Método | Endpoint | Acceso | Descripción |
+|--------|----------|--------|-------------|
+| POST | `/api/auth/registro` | 🌐 Público | Registra un nuevo usuario y devuelve JWT |
+| POST | `/api/auth/login` | 🌐 Público | Autentica usuario y devuelve JWT |
+
+### 📋 Testimonios
+| Método | Endpoint | Acceso | Descripción |
+|--------|----------|--------|-------------|
+| GET | `/api/testimonios` | 🌐 Público | Lista todos los testimonios |
+| GET | `/api/testimonios/{id}` | 🌐 Público | Obtiene un testimonio por ID |
+| POST | `/api/testimonios` | 🔒 ADMIN, EDITOR, USUARIOREGISTRADO | Crea un nuevo testimonio |
+| PUT | `/api/testimonios/editar` | 🔒 ADMIN, EDITOR | Edita un testimonio existente |
+| DELETE | `/api/testimonios/eliminar/{id}` | 🔒 ADMIN | Elimina un testimonio |
+
+### 🔑 Roles disponibles
+| Rol | Permisos |
+|-----|----------|
+| `admin` | CRUD completo |
+| `editor` | Crear y editar |
+| `usuarioregistrado` | Solo crear |
+| `usuariovisitante` | Solo lectura |
+
+### 📨 Ejemplo de uso
+**1. Login:**
+```json
+POST /api/auth/login
+{ "correo": "user@example.com", "password": "password123" }
+
+```
+
+## Flujos de Trabajo DevOps para Frontend, Backend y Seguridad
+
+Los pipelines automatizan el ciclo de vida del software para mejorar la colaboración y la eficiencia. Los pasos clave incluyen:
+
+Push/PR: Se inicia el pipeline con un Push o PR.
+Compilación y Escaneo: El código se compila y se escanea en busca de vulnerabilidades.
+Linting: Se verifica la calidad del código mediante herramientas de linting.
+Despliegue en Dev: El código se despliega en desarrollo y se realizan pruebas rápidas.
+Despliegue en Producción: Si todo va bien en Dev, se despliega en producción y se validan las pruebas finales.
+Seguridad: Se integran análisis estático y escaneos de seguridad a lo largo del proceso.
+
+Este enfoque automatiza el desarrollo, las pruebas, el despliegue y la seguridad, lo que permite una entrega continua y mejora la colaboración entre equipos.
+
+### Frontend
+
+```mermaid
+flowchart LR
+    A[Push/PR Event] --> B[Build]
+    A[Push/PR Event] --> C[Scan]
+    B --> D[Run Lint]
+    C --> D[Run Lint]
+
+    D --> E[Deploy Dev]
+    E --> F[Smoke Test Dev]
+
+    D --> G[Deploy Prod]
+    G --> H[Smoke Test Prod]
+
+    subgraph CI [CICD]
+      B
+      C
+      D
+      E
+      F
+      G
+      H
+    end
+```
+
+### Backend
+
+```mermaid
+flowchart LR
+    A[Push/PR Event] --> B[Build]
+    A[Push/PR Event] --> C[Scan]
+    B --> D[Run Lint]
+    C --> D[Run Lint]
+
+    D --> E[Deploy Dev]
+    E --> F[Smoke Test Dev]
+
+    D --> G[Deploy Prod]
+    G --> H[Smoke Test Prod]
+
+    subgraph CI [CICD]
+      B
+      C
+      D
+      E
+      F
+      G
+      H
+    end
+```
+
+### Seguridad
+
+```mermaid
+flowchart LR
+    A[Push/PR Event] --> B[Validate Branch]
+    
+    B --> C[Run Scan]
+    B --> D[Run SAST]
+
+    C --> E[Scan Completed]
+    D --> E
+
+    subgraph CI [CICD]
+      B
+      C
+      D
+      E
+    end
+```
